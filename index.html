@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humans of Davos</title>
+    
+    <!-- SEO and social sharing meta tags -->
+    <meta name="description" content="Humans of Davos">
+    <meta property="og:title" content="Humans of Davos">
+    <meta property="og:description" content="Humans of Davos">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://humansofdavos.com">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Humans of Davos" />
+    <meta name="twitter:description" content="Humans of Davos" />
+    <meta name="twitter:image" content="favicon/android-chrome-512x512.png" />
+    
+    <!-- Update favicon links to use favicon folder -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
+    <!-- Add the link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Humans of Davos",
+        "url": "https://humansofdavos.com",
+        "logo": "https://humansofdavos.com/logo.svg",
+        "description": "Humans of Davos",
+        "sameAs": [
+            "https://workshoplab.org"
+        ]
+    }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter Tight', sans-serif;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            gap: 40px;
+            padding-bottom: 60px;
+            margin-top: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo-svg {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-svg:hover {
+            opacity: 0.8;
+        }
+
+        .header-svg {
+            width: 100%;
+            max-width: 511px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #666;
+            padding: 10px;
+            background: white;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer-logo {
+            height: 20px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-logo:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/">
+            <img src="logo.svg" alt="Humans of Davos Logo" class="logo-svg">
+        </a>
+        <img src="Header.svg" alt="Humans of Davos" class="header-svg">
+    </div>
+
+    <footer class="footer">
+        product of
+        <a href="https://workshoplab.org" target="_blank" class="footer-link">
+            <img src="WL-footer.svg" alt="Workshop Lab" class="footer-logo">
+        </a>
+    </footer>
+</body>
+</html>

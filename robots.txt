@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /*.pdf$
+Disallow: /*?*
+
+Sitemap: https://club-y.co/sitemap.xml
+
+# Crawl-delay: 10 
