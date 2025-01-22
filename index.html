@@ -110,7 +110,6 @@
             width: 100%;
             justify-content: center;
             font-weight: 400;
-            transition: all 0.3s ease;
         }
 
         .footer-link {
@@ -118,7 +117,6 @@
             color: inherit;
             display: flex;
             align-items: center;
-            transition: all 0.3s ease;
         }
 
         .footer-logo {
@@ -128,13 +126,8 @@
             transition: all 0.3s ease;
         }
 
-        .footer:hover, 
-        .footer:hover .footer-link {
-            color: #DA291C;
-        }
-
-        .footer-logo:hover .black-part {
-            fill: #DA291C;
+        .footer-logo:hover {
+            filter: invert(27%) sepia(85%) saturate(2364%) hue-rotate(343deg) brightness(85%) contrast(124%);
         }
     </style>
 </head>
