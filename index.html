@@ -82,11 +82,12 @@
             max-width: 80px;
             height: auto;
             cursor: pointer;
-            transition: opacity 0.3s ease;
+            transition: all 0.3s ease;
         }
 
-        .logo-svg:hover {
-            opacity: 0.8;
+        .logo-svg:hover .black-part {
+            fill: #DA291C;
+            transition: fill 0.3s ease;
         }
 
         .header-svg {
@@ -109,6 +110,7 @@
             width: 100%;
             justify-content: center;
             font-weight: 400;
+            transition: all 0.3s ease;
         }
 
         .footer-link {
@@ -116,23 +118,35 @@
             color: inherit;
             display: flex;
             align-items: center;
+            transition: all 0.3s ease;
         }
 
         .footer-logo {
             height: 16px;
             opacity: 1;
             margin-left: 2px;
+            transition: all 0.3s ease;
         }
 
-        .footer-logo:hover {
-            opacity: 0.8;
+        .footer:hover, 
+        .footer:hover .footer-link {
+            color: #DA291C;
+        }
+
+        .footer-logo:hover .black-part {
+            fill: #DA291C;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="/">
-            <img src="logo.svg" alt="Humans of Davos Logo" class="logo-svg">
+            <svg class="logo-svg" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="black-part" d="M449.54 787V213H550.4V787H449.54Z" fill="black"/>
+                <path class="black-part" d="M212.999 450L786.999 450L786.999 550.86L212.999 550.86L212.999 450Z" fill="black"/>
+                <path class="yellow-part" d="M261.4 667.71L667.279 261.831L738.598 333.15L332.719 739.029L261.4 667.71Z" fill="#FDDD04"/>
+                <path class="blue-part" d="M332.719 261.831L738.599 667.71L667.28 739.029L261.401 333.149L332.719 261.831Z" fill="#1C63B7"/>
+            </svg>
         </a>
         <img src="Header.svg" alt="Humans of Davos" class="header-svg">
     </div>
